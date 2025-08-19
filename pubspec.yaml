@@ -1,0 +1,66 @@
+name: news_app_clean_arictecture
+description: A new Flutter project using clean architecture.
+
+# Prevent accidental publishing
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_bloc: ^9.1.1
+  bloc: ^9.0.0
+  equatable: ^2.0.7
+
+  # Dependency Injection
+  get_it: ^8.0.3
+
+  # Internationalization
+  intl: ^0.20.2
+
+  # Local Database
+  floor: ^1.5.0
+
+  # Networking
+  retrofit: ^4.7.0
+  dio: ^5.4.1 # retrofit needs dio
+
+  # Hooks
+  flutter_hooks: ^0.21.2
+
+  # Image Caching
+  cached_network_image: ^3.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^3.0.1
+  build_runner: ^2.4.9
+  retrofit_generator: ^8.0.6
+  floor_generator: ^1.5.0
+
+flutter:
+
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+
+  fonts:
+    - family: Mulish
+      fonts:
+        - asset: assets/fonts/Mulish-Regular.ttf
+        - asset: assets/fonts/Mulish-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Mulish-Light.ttf
+          weight: 300
