@@ -49,7 +49,6 @@ dev_dependencies:
   floor_generator: ^1.5.0
 
 flutter:
-
   uses-material-design: true
 
   assets:
